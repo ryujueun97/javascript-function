@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+function a(array) {
+	var result="";
+        for (var i =0; i < array[0]; ++i)
+	result += "*";
+
+        for (var i =0; i < 10- array[0]; ++i)
+	result += "_";
+	result += " + "
+	return result;
+}
+
+function b(array) {
+	var result="";
+         for (var i = 0; i < array[1]; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 10 - array[1]; ++i) {
+            result += "_";
+        }
+result += " = ";
+return result;
+}
+
+function c(array) {
+	var result="";
+         for (var i = 0; i < array[0]+array[1]; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 20 - (array[0]+array[1]); ++i) {
+            result += "_";
+	}
+    return result;
+}
+
+var testArray1 = [10, 8];
+var testArray2 = [1, 2];
+var testArray3 = [9, 5];
+
+console.log("A :" + a(testArray1) + b(testArray1) + c(testArray1));
+console.log("B :" + a(testArray2) + b(testArray2) + c(testArray2));
+console.log("C :" + a(testArray3) + b(testArray3) + c(testArray3));
+
+</script>
+</head>
+<body>
+</body>
+</html>
