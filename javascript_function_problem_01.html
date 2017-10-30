@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function average(array){
+	var a = 0 ;
+  for(var i = 0; i < array.length; i++)
+
+  {
+    	a = a + array[i];
+  }
+  return (a / array.length);
+  
+				}
+	
+var testArray1 = [90,80,50,40,10];
+var testArray2 = [90,30,100,50,50];
+var testArray3 = [20,30,60,50,20];
+var max1 = Math.max.apply(null,testArray1);
+var max2 = Math.max.apply(null,testArray2);
+var max3 = Math.max.apply(null,testArray3);
+var min1 = Math.min.apply(null,testArray1);
+var min2 = Math.min.apply(null,testArray2);
+var min3 = Math.min.apply(null,testArray3);
+ 
+
+console.log("A 학생의 평균 점수는" + average(testArray1) + ", 최고 점수는" + max1 + ", 최하 점수는" + min1 + "입니다." );
+console.log("B 학생의 평균 점수는" + average(testArray2) + ", 최고 점수는" + max2 + ", 최하 점수는" + min2 + "입니다." );
+console.log("C 학생의 평균 점수는" + average(testArray3) + ", 최고 점수는" + max3 + ", 최하 점수는" + min3 + "입니다." );
+       
+    </script>
+</head>
+<body>
+</body>
+</html>
